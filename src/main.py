@@ -5,20 +5,23 @@ from src.scraping_functions.scrape_school import scrape_school
 from src.config.config import url_part_1, url_part_2
 
 ##### TODO
-# Check Folder Exists
-# Scrape games
-# Make get school list (incl year here)
 # Update get_year to use proper web scraping
+# Add progress updates while scraping
+# Format games properly (see dakstats_scraper)
+#   Particularly need starting pitchers
+# Scrape Rosters
+# Make get school list (incl year here)
+# Make errors list for schools that don't fit existing formats
 
 def main():
     
     disable_warnings()
     check_data_file_exists()
     
+    # Get school list would eventually replace this test stuff
     test_school = {"url_part_1": url_part_1,
                    "url_part_2": url_part_2}
     school_list = [test_school]
-    #school_list = get_school_list
     
     for school in school_list:
         scrape_school(school)
