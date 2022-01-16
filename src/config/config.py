@@ -1,4 +1,6 @@
-url_part_1 = "https://wbuathletics.com"
+'''url_part_1 = "https://wbuathletics.com"
+url_part_2 = "/sports/baseball/schedule/2021"'''
+url_part_1 = "https://lcwarriors.com"
 url_part_2 = "/sports/baseball/schedule/2021"
 starting_url = url_part_1 + url_part_2
 

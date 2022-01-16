@@ -7,6 +7,7 @@ def format_game_data(game_data, school_name):
     game_data.append("GAME_END_POINT")
 
     game_data = format_team_names(game_data, school_name)
+    game_data = [g.replace("teamteamteam", school_name) for g in game_data]
     
     game_data = [g for gd in game_data for g in gd.split(";")]
 
