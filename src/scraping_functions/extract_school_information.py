@@ -6,6 +6,7 @@ import re
 from src.config.config import headers
 
 def get_school_name(school):
+    school_name = str()
     URL = school["url_part_1"] + school["url_part_2"]
     r = requests.get(URL, headers=headers, verify=False)
     text = r.text

@@ -7,6 +7,9 @@ from src.format_data.format_game_data import format_game_data
 
 def scrape_school(school):
     
+    # Clean team names OPPOSITION
+    # Extract starting pitcher
+    
     school_name = get_school_name(school)
     year = get_year(school)
     
@@ -19,7 +22,7 @@ def scrape_school(school):
     
     for link in game_links:
         game_data = scrape_game(link)
-        play_by_play_data += format_game_data(game_data)
+        play_by_play_data += format_game_data(game_data, school_name)
         # For testing purposes
         break
     
