@@ -5,13 +5,14 @@ from src.scraping_functions.scrape_school import scrape_school
 from src.config.config import url_part_1, url_part_2
 
 ##### TODO
-# Update get_year to use proper web scraping
+# Fix issue with starting pitchers
+#   Create documentation in comments
 # Add progress updates while scraping
-# Format games properly (see dakstats_scraper)
-#   Particularly need starting pitchers
 # Scrape Rosters
 # Make get school list (incl year here)
+# Update get_year to use proper web scraping
 # Make errors list for schools that don't fit existing formats
+# Add additional formats
 
 def main():
     

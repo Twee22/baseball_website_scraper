@@ -15,6 +15,8 @@ def get_game_list(school):
     links = re.findall(r"href=\".*stats.*\"", text)
 
     links = get_all_links(links)
+    
+    links = [i for n, i in enumerate(links) if i not in links[:n]]
 
     return links
 
