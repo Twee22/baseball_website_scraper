@@ -1,5 +1,11 @@
 from src.format_data.format_helper_functions import similar
 
+## Formatting things to do
+# Add Start point and end point
+# Format team names
+# Replace ';' with new lines
+# Make sure pitching works
+
 def format_game_data(game_data, school_name):
     
     game_data = [g.lower() for g in game_data]

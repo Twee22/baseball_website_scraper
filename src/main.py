@@ -5,7 +5,6 @@ from src.scraping_functions.scrape_school import scrape_school
 from src.config.config import url_part_1, url_part_2
 
 ##### TODO
-# Fix issue with starting pitchers
 #   Create documentation in comments
 # Add progress updates while scraping
 # Scrape Rosters

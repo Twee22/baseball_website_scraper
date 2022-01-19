@@ -8,6 +8,7 @@ from src.format_data.format_game_data import format_game_data
 def scrape_school(school):
     
     school_name = get_school_name(school)
+    print("Beginning to scrape: ", school_name)
     year = get_year(school)
     
     formatted_school_name = school_name.lower().replace(" ", "_")
@@ -17,10 +18,15 @@ def scrape_school(school):
     game_links = get_game_list(school)
     play_by_play_data = []
     
-    for link in game_links:
+    len_game_links = len(game_links)  
+    half_game_links = len_game_links / 2  
+
+    for count, link in enumerate(game_links):
+        if count == half_game_links or count == (half_game_links - 0.5):
+            print(school_name, "50% complete")
         game_data = scrape_game(link)
         play_by_play_data += format_game_data(game_data, school_name)
-        # For testing purposes
-        #break
     
     output_play_by_play_data(play_by_play_data, formatted_school_name, year)
+    
+    print(school_name, "completed")
