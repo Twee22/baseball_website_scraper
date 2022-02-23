@@ -1,4 +1,4 @@
-This program is designed to scrape all play by play data from dakstats, which hosts statistics for NAIA baseball
+This program is designed to scrape all play by play data from websites with format like Wayland's
 
 Installation
 
