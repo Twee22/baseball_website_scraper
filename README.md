@@ -8,5 +8,5 @@ Run '''pip3 install -r requirements.txt'''
 
 Usage
 
-Run '''python3 dakstats_scraper.py'''
+Run '''python3 overall_scraper.py'''
 Wait
